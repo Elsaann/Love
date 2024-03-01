@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6eec7;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 40px;
+        }
+        .question p {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #24344d;
+            margin-bottom: 10px;
+        }
+        .answers {
+            list-style-type: none;
+            padding: 0;
+        }
+        .answer {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .green {
+            color: blue;
+        }
+        .red {
+            color: red;
+        }
+        #submitBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #24344d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="question">
+        <p>NOTE: You can only sign the attached contract in WhatsApp after scoring full marks.</p>
+        <p>Question 1: Will you from today take initiatives to the dates?</p>
+        <ul class="answers">
+            <li class="answer correct"><input type="checkbox" name="q1" value="Yes"> (a) Yes</li>
+            <li class="answer"><input type="checkbox" name="q1" value="No"> (b) No</li>
+            <li class="answer"><input type="checkbox" name="q1" value="NotReady"> (c) I am not ready for this</li>
+        </ul>
+
+        <p>Question 2: How do you handle it when relationships don’t work out?</p>
+        <ul class="answers">
+            <li class="answer"><input type="checkbox" name="q2" value="Get angry">(a) Get angry/cut the call abruptly and risk losing her</li>
+            <li class="answer"><input type="checkbox" name="q2" value="Walk out">(b) Walk out</li>
+            <li class="answer correct"><input type="checkbox" name="q2" value="Sit down">(c) Sit down and talk calmly</li>
+        </ul>
+
+        <p>Question 3: Would we ever want to co-parent a pet?</p>
+        <ul class="answers">
+            <li class="answer"><input type="checkbox" name="q3" value="Get angry">(a) No</li>
+            <li class="answer correct"><input type="checkbox" name="q3" value="Get angry">(b) Yes</li>
+            <li class="answer"><input type="checkbox" name="q3" value="Get angry">(c) I am done tolerating you</li>
+        </ul>
+
+        <p>Question 4: Does it okay for a person to feel that they are forced to stay in a relationship while begging for the bare minimum?</p>
+        <ul class="answers">
+            <li class="answer correct"><input type="checkbox" name="q4" value="Get angry">(a) No, efforts should be constant in order to keep the relationship alive</li>
+            <li class="answer"><input type="checkbox" name="q4" value="Get angry">(b) Yes, because I am egotistic</li>
+            <li class="answer"><input type="checkbox" name="q4" value="Get angry">(c) Efforts are supposed to put only in the initial few months of dating afterwards you can take the girl for granted since she won't go anywhere</li>
+        </ul>
+
+        <p>Question 5: Will you learn to be patient with me from today?</p>
+        <ul class="answers">
+            <li class="answer"><input type="checkbox" name="q5" value="Get angry">(a) It depends on the situation</li>
+            <li class="answer correct"><input type="checkbox" name="q5" value="Get angry">(b) No matter what I will learn to handle the situation calmly</li>
+            <li class="answer"><input type="checkbox" name="q5" value="Get angry">(c) No I would rather fight with you and leave in agony of losing you than to handle things calmly</li>
+        </ul>
+
+        <p>Question 6: Should asking about each other's day and involving in their life is something to ask/beg about?</p>
+        <ul class="answers">
+            <li class="answer correct"><input type="checkbox" name="q6" value="Get angry">(a) Should always keep track of each other's life</li>
+            <li class="answer"><input type="checkbox" name="q6" value="Get angry">(b) Yes, you should beg until you get tired and leave me</li>
+            <li class="answer"><input type="checkbox" name="q6" value="Get angry">(c) I would only ask when I want to</li>
+        </ul>
+
+        <p>Question 7: When things get ugly between us what would you do?</p>
+        <ul class="answers">
+            <li class="answer"><input type="checkbox" name="q7" value="Get angry">(a) Threaten you with my life</li>
+            <li class="answer"><input type="checkbox" name="q7" value="Get angry">(b) Being possessive with you for socializing with your friends</li>
+            <li class="answer correct"><input type="checkbox" name="q7" value="Get angry">(c) Sit and think calmly, talk it out regarding what actions I did bothered you the most in a more respectful way. </li>
+        </ul>
+
+        <p>Question 8: Will you ever make me question my worth ever again? (FYI Baby you should be happy that I chose you. I worth a lot bear it or lose me)</p>
+        <ul class="answers">
+            <li class="answer"><input type="checkbox" name="q8" value="Get angry">(a) Yes baby every damn time. I would let you down</li>
+            <li class="answer"><input type="checkbox" name="q8" value="Get angry">(b) You should beg until you get tired and leave me</li>
+            <li class="answer correct"><input type="checkbox" name="q8" value="Get angry">(c) I would make you feel special and would let you know your worth. I will celebrate you.</li>
+        </ul>
+
+        <p>Question 9: Which of the following is your favorite day that you can't afford to forget and should celebrate like a festival?</p>
+        <ul class="answers">
+            <li class="answer correct"><input type="checkbox" name="q9" value="Get angry">(a) Dec 06</li>
+            <li class="answer"><input type="checkbox" name="q9" value="Get angry">(b) Ugadi </li>
+            <li class="answer"><input type="checkbox" name="q9" value="Get angry">(c) Krishna Janmashtami</li>
+        </ul>
+
+        <p>Question 10: Despite all the ups and downs, hardships, long distance are you ready to accept me as I am and learn to appreciate me?</p>
+        <ul class="answers">
+            <li class="answer"><input type="checkbox" name="q10" value="Get angry">(a) It completely depends on the situation </li>
+            <li class="answer correct"><input type="checkbox" name="q10" value="Get angry">(b) Absolutely</li>
+            <li class="answer correct"><input type="checkbox" name="q10" value="Get angry">(c) I promise that I won't make that mistake ever again</li>
+        </ul>
+        </div>
+        <button id="submitBtn">Submit</button>
+    <div id="result" style="display: none;"></div>
+
+    <script>
+        // Function to handle answer submission
+        function handleSubmit() {
+            let userScore = 0;
+            let totalQuestions = 0;
+
+            // Iterate through each question
+            const questions = document.querySelectorAll('.question');
+            questions.forEach(question => {
+                totalQuestions++;
+
+                // Initialize score for the current question
+                let questionScore = 0;
+
+                // Iterate through each answer within the question
+                const answers = question.querySelectorAll('.answer');
+                answers.forEach(answer => {
+                    const isChecked = answer.querySelector('input').checked;
+                    const isCorrect = answer.classList.contains('correct');
+
+                    // If the answer is checked and correct, increment the question score
+                    if (isChecked && isCorrect) {
+                        questionScore++;
+                    }
+                });
+
+                // Increment the total user score with the question score
+                userScore += questionScore;
+            });
+
+            // Display the result
+            const resultDisplay = document.getElementById('result');
+            resultDisplay.style.display = 'block';
+            resultDisplay.innerHTML = `You scored ${userScore} out of 10`;
+        }
+
+        // Get submit button
+        const submitBtn = document.getElementById('submitBtn');
+        submitBtn.addEventListener('click', handleSubmit);
+    </script>
+</body>
+</html>

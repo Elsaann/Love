@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./yes_style.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url('https://e0.pxfuel.com/wallpapers/685/107/desktop-wallpaper-love-heart-wedding-rustic-heart-thumbnail.jpg'); /* Emoji background */
+            background-repeat: repeat;
+            background-size: cover;
+            position: relative; /* Add position relative */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .header_text {
+            font-size: 3em; /* Increased font size */
+            text-align: center;
+            margin-bottom: 20px;
+            color: black; /* Header text color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow */
+        }
+        .gif_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; /* Add margin between header and images */
+        }
+        .gif_container img {
+            width: 150px; /* Fixed width */
+            height: 150px; /* Fixed height */
+            object-fit: cover; /* Maintain aspect ratio */
+            margin: 0 5px; /* Add margin between images */
+            animation: pulse 2s ease-in-out infinite alternate; /* Add animation */
+        }
+        /* Define keyframes for the animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+        .quiz_button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff6f61;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="quiz_button" >Quiz</button>
+        <button class="quiz_button" onclick="window.location.href = 'Quiz.html'">Quiz</button>
+        <div>
+            <h1 class="header_text">Muahhh!! LOVE YOU too Ammuuuuu...</h1>
+        </div>
+        <div class="gif_container">
+            <img src="file:///C:/Users/91948/Desktop/Files/Amith/L/IMG-20230204-WA0000.jpg">
+            <img src="file:///C:/Users/91948/Desktop/Files/Amith/L/IMG-20211218-WA0001.jpg">
+            <img src="file:///C:/Users/91948/Desktop/Files/Amith/L/IMG_20220919_104609.jpg">
+            <img src="file:///C:/Users/91948/Desktop/Files/Amith/L/IMG_5574.JPG">
+        </div>
+    </div>
+</body>
+</html>
